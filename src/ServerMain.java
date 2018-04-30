@@ -31,6 +31,8 @@ public class ServerMain implements Loggable {
     }
 
     public boolean login(String nick) throws RemoteException {
+
+        System.out.println(nick +  " is logging..");
         return false;
     }
 

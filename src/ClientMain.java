@@ -5,6 +5,8 @@ import static java.lang.System.*;
 
 public class ClientMain {
 
+    static int PORT = 1234;
+
     private ClientMain() {}
 
     public static void main(String[] args) {
@@ -12,15 +14,15 @@ public class ClientMain {
 
         try {
             // Getting the registry
-            Registry registry = LocateRegistry.getRegistry(null);
+            Registry registry = LocateRegistry.getRegistry("127.0.0.1", PORT);
 
             // Looking up the registry for the remote object
-            Loggable stub = (Loggable) registry.lookup("Loggable");
+           Loggable stub = (Loggable) registry.lookup("Loggable");
 
             // Calling the remote method using the obtained object
-            //stub.printMsg();
+            Boolean logged = stub.login("Bob");
 
-            // System.out.println("Remote method invoked");
+            System.out.println("Remote method invoked " + logged);
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
