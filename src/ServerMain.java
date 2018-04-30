@@ -5,15 +5,10 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class ServerMain implements Loggable {
 
-    public ServerMain() {
-
-    }
-
     static int PORT = 1234;
 
     public static void main(String[] args) {
-        //System.out.println("Hello from Server!");
-
+        //System.out.println("Hello from Server!")
         try {
             ServerMain obj = new ServerMain();
             Loggable stub = (Loggable) UnicastRemoteObject.exportObject(obj, PORT);

@@ -7,10 +7,7 @@ public class ClientMain {
 
     static int PORT = 1234;
 
-    private ClientMain() {}
-
     public static void main(String[] args) {
-        //out.println("Hello From Client!");
 
         try {
             // Getting the registry
@@ -29,9 +26,4 @@ public class ClientMain {
         }
 
     }
-
-
-
-
-
 }
