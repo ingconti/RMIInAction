@@ -20,7 +20,7 @@ public class ServerMain implements Loggable {
             System.err.println("Server ready");
 
         } catch (Exception e) {
-            System.err.println("Server exception: " + e.toString());
+            System.err.println("Server exception: " + e);
             e.printStackTrace();
         }
     }

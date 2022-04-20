@@ -20,6 +20,8 @@ public class ClientMain {
             Boolean logged = stub.login("Bob");
 
             System.out.println("Remote method invoked " + logged);
+
+
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
