@@ -13,5 +13,5 @@ package it.polimi;
 
 1) open a Terminal where "classes" is (inside "target")
 2) ls will show NO item, but is fine
-3) execute: java it/polimi/App      
+3) execute: java it/polimi/ClientMain     
 
