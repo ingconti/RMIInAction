@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RMIInAction.iml" filepath="$PROJECT_DIR$/RMIInAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RMI_Chat/RMI_Chat.iml" filepath="$PROJECT_DIR$/../RMI_Chat/RMI_Chat.iml" />
     </modules>
   </component>
 </project>
